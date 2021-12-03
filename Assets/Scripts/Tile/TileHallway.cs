@@ -13,7 +13,7 @@ public class TileHallway : Tile {
 					case 1: 
 						Tile reward = tileManager.getReward(hall.pos);
 						tileBoard.matrix[(int)hall.pos.x,(int)hall.pos.y]= reward;
-						GameObject.Destroy(hall.gameObject);
+						Destroy(hall.gameObject);
 						break;
 					case 2: 
 						
@@ -21,7 +21,7 @@ public class TileHallway : Tile {
 					default: 
 						Tile obstacle = tileManager.getObstacle(hall.pos);
 						tileBoard.matrix[(int)hall.pos.x,(int)hall.pos.y]= obstacle;
-						GameObject.Destroy(hall.gameObject);
+						Destroy(hall.gameObject);
 						break;
 									
 				}

@@ -59,6 +59,7 @@ public class SwapManager : MonoBehaviour {
 
 				default:
 					Debug.Log ("Algo malio sal con el swapValue : " + swapValue);
+					break;
 			}
 			canSwapBool = true;
 		}
